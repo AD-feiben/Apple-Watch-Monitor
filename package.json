@@ -1,0 +1,22 @@
+{
+  "name": "apple-watch-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": "./index.js",
+  "scripts": {
+    "kill": "pm2 delete process.json",
+    "stop": "pm2 stop process.json",
+    "start": "npm run stop && pm2 start process.json"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "node-schedule": "^2.0.0",
+    "nodemailer": "^6.7.0",
+    "play-sound": "^1.1.3"
+  }
+}
